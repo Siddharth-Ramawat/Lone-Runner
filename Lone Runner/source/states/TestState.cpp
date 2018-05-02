@@ -10,7 +10,7 @@ bool TestState::Init()
 {
 
 	glClearColor(0, 1, 0, 0);
-	this->shader = new Shader("test_shader.vert", "test_shader.frag");
+	this->shader = new Shader("Resources/test_shader.vert", "Resources/test_shader.frag");
 	this->shader->Use();
 
 	this->testShape = new TestShape(this->shader);
